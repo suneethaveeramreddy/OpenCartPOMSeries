@@ -31,5 +31,15 @@ public class LoginPage {
 		System.out.println("Login page url is: " +url);
 		return url;
 	}
+	public boolean isForgotPwdLinkExist() {
+		return driver.findElement(forgotpwd).isDisplayed();
+	}
+	public String doLogin(String username, String pwd) {
+		System.out.println("App credentials are: " + username + ":" +pwd);
+		driver.findElement(emailID).sendKeys(username);
+		driver.findElement(forgotpwd).sendKeys(pwd);
+		driver.findElement(loginBtn).click();
+		return driver.getTitle();
+	}
 
 }
