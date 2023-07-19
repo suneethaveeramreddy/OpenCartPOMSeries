@@ -3,43 +3,48 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.opencart.utils.ElementUtil;
+
 public class LoginPage {
 	
 		private WebDriver driver;
+		private ElementUtil eleUtil;
 	
 	//1. By locators - page locators
 	private By emailID 		= By.id("input-email");
 	private By password 	= By.id("input-password");
-	private By forgotpwd	= By.linkText("Forgotten Password"); 
+	private By forgotpwdLink	= By.linkText("Forgotten Password"); 
 	private By loginBtn		= By.xpath("//input[@type='submit']");
 	
 	
 	//2. Page Constructor 
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
+		eleUtil =new ElementUtil(driver);
 	}
 	
 	//3. Public Page actions/methods 
 	public String getLoginPageTitle() {
-		String title = driver.getTitle();
+		String title = eleUtil.waitForTitleIs("Account Login", 5);
 		System.out.println("Login page title is: " +title);
 		return title;
 	}
 	
 	public String getLoginPageURL() {
-		String url = driver.getCurrentUrl();
-		System.out.println("Login page url is: " +url);
+		String url = eleUtil.waitForURLContains("route=account/login", 5);
+		System.out.println("Login page url is: " + url);
 		return url;
 	}
 	public boolean isForgotPwdLinkExist() {
-		return driver.findElement(forgotpwd).isDisplayed();
+		return eleUtil.waitForElementVisible(forgotpwdLink, 10).isDisplayed();
 	}
+	
 	public String doLogin(String username, String pwd) {
 		System.out.println("App credentials are: " + username + ":" +pwd);
-		driver.findElement(emailID).sendKeys(username);
-		driver.findElement(forgotpwd).sendKeys(pwd);
-		driver.findElement(loginBtn).click();
-		return driver.getTitle();
+		eleUtil.waitForElementVisible(emailID, 10).sendKeys(username);
+		eleUtil.doSendKeys(password, pwd);
+		eleUtil.doClick(loginBtn);
+		return eleUtil.waitForTitleIs("My Account", 5);
 	}
 
 }
