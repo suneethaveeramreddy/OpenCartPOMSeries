@@ -3,6 +3,7 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
 
 public class LoginPage {
@@ -25,26 +26,26 @@ public class LoginPage {
 	
 	//3. Public Page actions/methods 
 	public String getLoginPageTitle() {
-		String title = eleUtil.waitForTitleIs("Account Login", 5);
+		String title = eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
 		System.out.println("Login page title is: " +title);
 		return title;
 	}
 	
 	public String getLoginPageURL() {
-		String url = eleUtil.waitForURLContains("route=account/login", 5);
+		String url = eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL_FRACTION, AppConstants.SHORT_TIME_OUT);
 		System.out.println("Login page url is: " + url);
 		return url;
 	}
 	public boolean isForgotPwdLinkExist() {
-		return eleUtil.waitForElementVisible(forgotpwdLink, 10).isDisplayed();
+		return eleUtil.waitForElementVisible(forgotpwdLink, AppConstants.MEDIUM_TIME_OUT).isDisplayed();
 	}
 	
 	public String doLogin(String username, String pwd) {
 		System.out.println("App credentials are: " + username + ":" +pwd);
-		eleUtil.waitForElementVisible(emailID, 10).sendKeys(username);
+		eleUtil.waitForElementVisible(emailID, AppConstants.MEDIUM_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
-		return eleUtil.waitForTitleIs("My Account", 5);
+		return eleUtil.waitForTitleIs(AppConstants.ACCOUNT_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
 	}
 
 }
