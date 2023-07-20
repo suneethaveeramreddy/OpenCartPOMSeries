@@ -45,7 +45,7 @@ public class LoginPage {
 		eleUtil.waitForElementVisible(emailID, AppConstants.MEDIUM_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
-		return eleUtil.waitForTitleIs(AppConstants.ACCOUNT_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
+		return eleUtil.waitForTitleIs(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
 	}
 
 }
