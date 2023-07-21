@@ -27,8 +27,9 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority=4)
 	public void loginTest() {
-		String accPageTitle = loginpage.doLogin("janautomation@gmail.com", "Selenium@12345");
-		Assert.assertEquals(accPageTitle, AppConstants.ACCOUNTS_PAGE_TITLE);
+		accPage=loginpage.doLogin("janautomation@gmail.com", "Selenium@12345");
+		//Assert.assertEquals(accPage.getAccPageTitle(), AppConstants.ACCOUNTS_PAGE_TITLE);
+		Assert.assertEquals(accPage.isLogoutLinkExist(), true);
 	}
 	
 

@@ -48,8 +48,9 @@ public class AccountsPage {
 		return eleUtil.waitForElementsVisible(accHeaders, AppConstants.MEDIUM_TIME_OUT).size();
 	}
 	
-	public void doSearch(String searchKey) {
+	public SearchResultsPage doSearch(String searchKey) {
 		eleUtil.waitForElementVisible(search, AppConstants.MEDIUM_TIME_OUT).sendKeys(searchKey);
 		eleUtil.doClick(searchIcon);
+		return new SearchResultsPage(driver);
 	}
 }
