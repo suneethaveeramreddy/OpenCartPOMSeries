@@ -40,12 +40,13 @@ public class LoginPage {
 		return eleUtil.waitForElementVisible(forgotpwdLink, AppConstants.MEDIUM_TIME_OUT).isDisplayed();
 	}
 	
-	public String doLogin(String username, String pwd) {
+	public AccountsPage doLogin(String username, String pwd) {
 		System.out.println("App credentials are: " + username + ":" +pwd);
 		eleUtil.waitForElementVisible(emailID, AppConstants.MEDIUM_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(loginBtn);
-		return eleUtil.waitForTitleIs(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
+		//return eleUtil.waitForTitleIs(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
+		return new AccountsPage(driver);
 	}
 
 }

@@ -5,11 +5,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
 
 public class BaseTest {
 	WebDriver driver;
 	protected LoginPage loginpage;
+	protected AccountsPage accPage;
 		
 	@BeforeTest()
 	public void setUp() {
