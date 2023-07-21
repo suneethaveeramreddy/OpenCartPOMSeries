@@ -23,7 +23,7 @@ public class AccountsPage {
 	
 	public AccountsPage(WebDriver driver) {
 		this.driver=driver;
-		//eleUtil = new ElementUtil(driver);
+		eleUtil = new ElementUtil(driver);
 	}
 	
 	public String getAccPageTitle() {
@@ -41,6 +41,7 @@ public class AccountsPage {
 			String headerText=e.getText();
 			headersValueList.add(headerText);
 		}
+		System.out.println("Account Page Headers are===>" + headersValueList);
 		return headersValueList;
 	}
 	public int getAccountsPageHeaderCount() {
