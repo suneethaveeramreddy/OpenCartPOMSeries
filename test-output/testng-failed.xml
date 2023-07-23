@@ -6,11 +6,8 @@
       <class name="com.qa.opencart.tests.AccountsPageTest">
         <methods>
           <include name="getLoginPageSetUp"/>
-          <include name="accPageTitleTest"/>
           <include name="setUp"/>
-          <include name="accPageHeadersTest"/>
-          <include name="logoutLinkExistTest"/>
-          <include name="accPageHeadersCountTest"/>
+          <include name="searchTest" invocation-numbers="1 2 3"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.AccountsPageTest -->

@@ -49,7 +49,9 @@ public class AccountsPage {
 	}
 	
 	public SearchResultsPage doSearch(String searchKey) {
-		eleUtil.waitForElementVisible(search, AppConstants.MEDIUM_TIME_OUT).sendKeys(searchKey);
+		WebElement searchField = eleUtil.waitForElementVisible(search, AppConstants.MEDIUM_TIME_OUT);
+		searchField.clear();
+		searchField.sendKeys(searchKey);
 		eleUtil.doClick(searchIcon);
 		return new SearchResultsPage(driver);
 	}

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
@@ -38,11 +39,21 @@ public class AccountsPageTest extends BaseTest{
 		Assert.assertEquals(actAccPageHeaderList, AppConstants.EXPECTED_ACC_PAGE_HEADERS_LIST);
 	}
 	
-	@Test
-	public void searchTest() {
-		searchResPage  = accPage.doSearch("Macbook");
+	@DataProvider
+	public Object[][] getSearchKey() {
+		return new Object[][] {
+			{"macbook",3},
+				{"imac",1},
+				{"samsung",2},
+					{"canon",1}
+		};
+	}
+	
+	@Test(dataProvider="getSearchKey")
+	public void searchTest(String searchKey, int expProductCount) {
+		searchResPage  = accPage.doSearch(searchKey);
 		int actResultsCount = searchResPage.getSearchProductResultsCount();
-		Assert.assertEquals(actResultsCount, 3);
+		Assert.assertEquals(actResultsCount, expProductCount);
 	}
 	
 	
