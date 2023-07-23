@@ -7,11 +7,13 @@ import org.testng.annotations.BeforeTest;
 
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.SearchResultsPage;
 
 public class BaseTest {
 	WebDriver driver;
 	protected LoginPage loginpage;
 	protected AccountsPage accPage;
+	protected SearchResultsPage searchResPage;
 		
 	@BeforeTest()
 	public void setUp() {

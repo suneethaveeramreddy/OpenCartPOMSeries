@@ -8,8 +8,7 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
-import com.qa.opencart.pages.AccountsPage;
-import com.qa.opencart.pages.SearchResultsPage;
+
 
 public class AccountsPageTest extends BaseTest{
 	
@@ -41,8 +40,9 @@ public class AccountsPageTest extends BaseTest{
 	
 	@Test
 	public void searchTest() {
-		SearchResultsPage doSearch = accPage.doSearch("Macbook");
-		
+		searchResPage  = accPage.doSearch("Macbook");
+		int actResultsCount = searchResPage.getSearchProductResultsCount();
+		Assert.assertEquals(actResultsCount, 3);
 	}
 	
 	
