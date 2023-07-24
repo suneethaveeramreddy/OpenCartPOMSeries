@@ -21,5 +21,10 @@ public class SearchResultsPage {
 	public int getSearchProductResultsCount() {
 		return eleUtil.waitForElementsVisible(productResults, AppConstants.MEDIUM_TIME_OUT).size();
 	}
+	
+	public ProductInfoPage selectProduct(String productName) {
+		eleUtil.clickElementWhenReady(By.linkText(productName), AppConstants.MEDIUM_TIME_OUT);
+		return new ProductInfoPage(driver);
+	}
 
 }

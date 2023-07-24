@@ -37,6 +37,12 @@ public class ElementUtil {
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
+	
+	public String doElementGetText(By locator) {
+		String eleText = getElement(locator).getText();
+		System.out.println("Element text is =====>" +eleText);
+		return eleText;
+	}
 
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);

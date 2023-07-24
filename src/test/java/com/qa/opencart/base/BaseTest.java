@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.ProductInfoPage;
 import com.qa.opencart.pages.SearchResultsPage;
 
 public class BaseTest {
@@ -14,6 +15,7 @@ public class BaseTest {
 	protected LoginPage loginpage;
 	protected AccountsPage accPage;
 	protected SearchResultsPage searchResPage;
+	protected ProductInfoPage productInfoPage;
 		
 	@BeforeTest()
 	public void setUp() {
