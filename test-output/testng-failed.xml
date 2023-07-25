@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.opencart.tests.ProductInfoTest">
         <methods>
+          <include name="productImagesCountTest"/>
           <include name="setUp"/>
           <include name="prodInfoSetUp"/>
           <include name="productHeaderTest"/>

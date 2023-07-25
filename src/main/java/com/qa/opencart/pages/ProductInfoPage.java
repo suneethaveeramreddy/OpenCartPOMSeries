@@ -25,7 +25,7 @@ public class ProductInfoPage {
 		return eleUtil.doElementGetText(productHeader);
 	}
 	
-	public int getProductCount() {
+	public int getProductImagesCount() {
 		int actProductImagesCount=eleUtil.waitForElementsVisible(productImages, AppConstants.MEDIUM_TIME_OUT).size();
 		System.out.println("total product images for :" +getProductHeaderText() + "===>" + actProductImagesCount);
 		return actProductImagesCount;
