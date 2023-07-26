@@ -5,10 +5,9 @@
     <classes>
       <class name="com.qa.opencart.tests.ProductInfoTest">
         <methods>
-          <include name="productImagesCountTest"/>
+          <include name="productImagesCountTest" invocation-numbers="1 2 3 4 5"/>
           <include name="setUp"/>
           <include name="prodInfoSetUp"/>
-          <include name="productHeaderTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.ProductInfoTest -->

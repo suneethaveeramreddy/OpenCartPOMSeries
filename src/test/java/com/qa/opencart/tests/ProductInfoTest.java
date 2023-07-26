@@ -23,7 +23,7 @@ public class ProductInfoTest extends BaseTest{
 			{"iMac","iMac"},
 			{"samsung","Samsung Galaxy Tab 10.1"},
 			{"samsung","Samsung SyncMaster 941BW"},
-			{"canon",1}
+			{"canon","Canon EOS 5D"}
 		};
 	}
 	@Test(dataProvider="productTestData")
@@ -34,12 +34,24 @@ public class ProductInfoTest extends BaseTest{
 		Assert.assertEquals(actProductHeader, productName);
 	}
 	
-	@Test
-	public void productImagesCountTest() {
-		searchResPage = accPage.doSearch("macbook");
-		productInfoPage = searchResPage.selectProduct("MacBook Pro");
+	@DataProvider
+	public Object[][] productData() {
+		return new Object[][] {
+			{"macbook","MacBook Pro",4},
+			{"macbook","MacBook Air",6},
+			{"iMac","iMac",1},
+			{"samsung","Samsung Galaxy Tab 10.1",7},
+			{"samsung","Samsung SyncMaster 941BW",1},
+			{"canon","Canon EOS 5D",3}
+		};
+	}
+	
+	@Test(dataProvider="productData")
+	public void productImagesCountTest(String searchKey, String productName, int expProductImagesCount) {
+		searchResPage = accPage.doSearch(searchKey);
+		productInfoPage = searchResPage.selectProduct(productName);
 		int actProductImagesCount = productInfoPage.getProductImagesCount();
-		Assert.assertEquals(actProductImagesCount, 4);
+		Assert.assertEquals(actProductImagesCount, expProductImagesCount);
 		
 	}
 
