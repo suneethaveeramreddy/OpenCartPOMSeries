@@ -38,8 +38,8 @@ public class ProductInfoTest extends BaseTest{
 	public Object[][] productData() {
 		return new Object[][] {
 			{"macbook","MacBook Pro",4},
-			{"macbook","MacBook Air",6},
-			{"iMac","iMac",1},
+			{"macbook","MacBook Air",4},
+			{"iMac","iMac",3},
 			{"samsung","Samsung Galaxy Tab 10.1",7},
 			{"samsung","Samsung SyncMaster 941BW",1},
 			{"canon","Canon EOS 5D",3}
@@ -52,7 +52,6 @@ public class ProductInfoTest extends BaseTest{
 		productInfoPage = searchResPage.selectProduct(productName);
 		int actProductImagesCount = productInfoPage.getProductImagesCount();
 		Assert.assertEquals(actProductImagesCount, expProductImagesCount);
-		
 	}
 
 }
