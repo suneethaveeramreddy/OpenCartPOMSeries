@@ -14,7 +14,11 @@ import org.openqa.selenium.safari.SafariDriver;
 public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
-	
+		/**
+		 * This is used to initialize the driver
+		 * @param browserName
+		 * @return
+		 */
 	public WebDriver initDriver(String browserName) {
 		System.out.println("browser name is : "+ browserName);
 		
@@ -43,16 +47,17 @@ public class DriverFactory {
 		
 	}
 	
-	public void initProp() {
+	public Properties initProp() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream(".src\\test\\resources\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return prop;
 	} 
 
 }
