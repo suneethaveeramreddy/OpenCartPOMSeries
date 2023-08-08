@@ -10,16 +10,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
+/**
+ * 
+ * @author sunee
+ *
+ */
 public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
 		/**
 		 * This is used to initialize the driver
 		 * @param browserName
-		 * @return
+		 * @return it returns the driver
 		 */
-	public WebDriver initDriver(String browserName) {
+	public WebDriver initDriver(Properties prop) {
+		String browserName = prop.getProperty("browser");
 		System.out.println("browser name is : "+ browserName);
 		
 		switch (browserName.toLowerCase().trim()) {
@@ -42,11 +47,14 @@ public class DriverFactory {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+		driver.get(prop.getProperty("url"));
 		return driver;
 		
 	}
-	
+	/**
+	 * This method is used to initialise the properties 
+	 * @return
+	 */
 	public Properties initProp() {
 		prop = new Properties();
 		try {
