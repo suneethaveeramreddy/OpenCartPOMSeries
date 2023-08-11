@@ -15,7 +15,7 @@ import com.qa.opencart.pages.SearchResultsPage;
 
 public class BaseTest {
 	WebDriver driver;
-	Properties prop;
+	protected Properties prop;
 	protected LoginPage loginpage;
 	protected AccountsPage accPage;
 	protected SearchResultsPage searchResPage;

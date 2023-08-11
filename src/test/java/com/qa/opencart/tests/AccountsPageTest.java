@@ -15,7 +15,7 @@ public class AccountsPageTest extends BaseTest{
 	
 	@BeforeClass()
 		public void getLoginPageSetUp() {
-		accPage = loginpage.doLogin("janautomation@gmail.com", "Selenium@12345");
+		accPage=loginpage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
 		}
 	
 	@Test
