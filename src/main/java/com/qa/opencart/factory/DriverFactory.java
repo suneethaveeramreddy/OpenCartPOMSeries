@@ -18,6 +18,7 @@ import org.openqa.selenium.safari.SafariDriver;
 public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
+	OptionsManager optionsManager;
 		/**
 		 * This is used to initialize the driver
 		 * @param browserName
@@ -26,16 +27,17 @@ public class DriverFactory {
 	public WebDriver initDriver(Properties prop) {
 		String browserName = prop.getProperty("browser");
 		System.out.println("browser name is : "+ browserName);
+		optionsManager = new OptionsManager(prop);
 		
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
-			driver =new ChromeDriver();
+			driver =new ChromeDriver(optionsManager.getChromeOptions());
 			break;
 		case "firefox":
-			driver =new FirefoxDriver();
+			driver =new FirefoxDriver(optionsManager.getFirefoxOptions());
 			break;
 		case "edge":
-			driver =new EdgeDriver();
+			driver =new EdgeDriver(optionsManager.getEdgeOptions());
 			break;
 		case "safari":
 			driver =new SafariDriver();
@@ -58,7 +60,7 @@ public class DriverFactory {
 	public Properties initProp() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream(".\\src\\test\\resources\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

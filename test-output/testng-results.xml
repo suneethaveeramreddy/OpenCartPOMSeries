@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-11T11:59:48 JST" name="Default suite" finished-at="2023-08-11T11:59:52 JST" duration-ms="4663">
+  <suite started-at="2023-08-12T07:38:04 JST" name="Default suite" finished-at="2023-08-12T07:38:08 JST" duration-ms="4211">
     <groups>
     </groups>
-    <test started-at="2023-08-11T11:59:48 JST" name="Default test" finished-at="2023-08-11T11:59:52 JST" duration-ms="4663">
+    <test started-at="2023-08-12T07:38:04 JST" name="Default test" finished-at="2023-08-12T07:38:08 JST" duration-ms="4211">
       <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:48 JST" name="setUp" finished-at="2023-08-11T11:59:51 JST" duration-ms="3535" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:04 JST" name="setUp" finished-at="2023-08-12T07:38:06 JST" duration-ms="2803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:51 JST" name="loginPageTitleTest" finished-at="2023-08-11T11:59:51 JST" duration-ms="20" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:06 JST" name="loginPageTitleTest" finished-at="2023-08-12T07:38:07 JST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="getLoginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:51 JST" name="getLoginPageURLTest" finished-at="2023-08-11T11:59:51 JST" duration-ms="19" status="PASS">
+        <test-method signature="getLoginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:07 JST" name="getLoginPageURLTest" finished-at="2023-08-12T07:38:07 JST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLoginPageURLTest -->
-        <test-method signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:51 JST" name="isForgotPwdLinkExistTest" finished-at="2023-08-11T11:59:51 JST" duration-ms="64" status="PASS">
+        <test-method signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:07 JST" name="isForgotPwdLinkExistTest" finished-at="2023-08-12T07:38:07 JST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isForgotPwdLinkExistTest -->
-        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:51 JST" name="loginTest" finished-at="2023-08-11T11:59:52 JST" duration-ms="838" status="PASS">
+        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:07 JST" name="loginTest" finished-at="2023-08-12T07:38:08 JST" duration-ms="1054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-11T11:59:52 JST" name="tearDown" finished-at="2023-08-11T11:59:52 JST" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@1189dd52]" started-at="2023-08-12T07:38:08 JST" name="tearDown" finished-at="2023-08-12T07:38:08 JST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
