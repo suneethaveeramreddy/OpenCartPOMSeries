@@ -19,6 +19,8 @@ public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
 	OptionsManager optionsManager;
+	
+	
 		/**
 		 * This is used to initialize the driver
 		 * @param browserName
@@ -29,7 +31,7 @@ public class DriverFactory {
 		System.out.println("browser name is : "+ browserName);
 		optionsManager = new OptionsManager(prop);
 		
-		switch (browserName.toLowerCase().trim()) {
+		switch (browserName.toLowerCase()) {
 		case "chrome":
 			driver =new ChromeDriver(optionsManager.getChromeOptions());
 			break;
