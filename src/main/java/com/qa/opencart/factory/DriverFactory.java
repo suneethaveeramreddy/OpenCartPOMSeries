@@ -19,7 +19,7 @@ public class DriverFactory {
 	WebDriver driver;
 	Properties prop;
 	OptionsManager optionsManager;
-	
+	public static String highlight;
 	
 		/**
 		 * This is used to initialize the driver
@@ -29,6 +29,7 @@ public class DriverFactory {
 	public WebDriver initDriver(Properties prop) {
 		String browserName = prop.getProperty("browser");
 		System.out.println("browser name is : "+ browserName);
+		highlight = prop.getProperty("highlight");
 		optionsManager = new OptionsManager(prop);
 		
 		switch (browserName.toLowerCase()) {

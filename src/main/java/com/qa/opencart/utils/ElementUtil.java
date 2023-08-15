@@ -18,12 +18,16 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.opencart.factory.DriverFactory;
+
 public class ElementUtil {
 
 	private WebDriver driver;
+	private JavaScriptUtil jsUtil;
 	
 	public ElementUtil(WebDriver driver) {
 		this.driver=driver;
+		jsUtil = new JavaScriptUtil(driver);
 	}
 	
 	public void doSendKeys(By locator,String value) {
@@ -45,7 +49,12 @@ public class ElementUtil {
 	}
 
 	public WebElement getElement(By locator) {
-		return driver.findElement(locator);
+		
+		WebElement element = driver.findElement(locator);
+		if (Boolean.parseBoolean(DriverFactory.highlight)) {
+			jsUtil.flash(element);
+		}
+		return element;
 	}
 
 	public List<WebElement> getElements(By locator) {

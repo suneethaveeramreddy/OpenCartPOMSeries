@@ -21,6 +21,7 @@ public class OptionsManager {
 	public ChromeOptions getChromeOptions() {
 		co = new ChromeOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
+			//co.setHeadless(true);
 			co.addArguments("--headless=new");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
@@ -32,7 +33,8 @@ public class OptionsManager {
 	public FirefoxOptions getFirefoxOptions() {
 		fo = new FirefoxOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
-			fo.addArguments("--headless");
+			//fo.setHeadless(true);
+			fo.addArguments("-headless");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			fo.addArguments("--incognito");
@@ -43,6 +45,7 @@ public class OptionsManager {
 	public EdgeOptions getEdgeOptions() {
 		eo = new EdgeOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
+			//eo.setHeadless(true);
 			eo.addArguments("--headless");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
