@@ -15,6 +15,7 @@ public class ProductInfoPage {
 	
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	private Map<String, String> productMap;
 	
 	private By productHeader =By.cssSelector("div#content h1");
 	private By productImages =By.cssSelector("ul.thumbnails img");
@@ -42,27 +43,37 @@ public class ProductInfoPage {
 //	Product Code: Product 18
 //	Reward Points: 800
 //	Availability: In Stock
-	public Map<String, String> getProductMetaData() {
+	private void getProductMetaData() {
 		List<WebElement> metaList = eleUtil.waitForElementsVisible(ProductMetaData, AppConstants.MEDIUM_TIME_OUT);
-		Map<String, String> metaMap=new HashMap<String, String>();
+		//Map<String, String> metaMap=new HashMap<String, String>();
 		for(WebElement e:metaList) {
 			String metaText = e.getText();
 			String key = metaText.split(":")[0].trim();
 			String value = metaText.split(":")[1].trim();
-			metaMap.put(key, value);
+			productMap.put(key, value);
 		}
-		return metaMap;
+		//return metaMap;
 	}
 //	$2,000.00
 //	Ex Tax: $2,000.00
-	public Map<String, String> getProductPriceData() {
+	private void getProductPriceData() {
 		List<WebElement> priceList = eleUtil.waitForElementsVisible(ProductPriceData, AppConstants.MEDIUM_TIME_OUT);
-		Map<String,String> priceMap=new HashMap<String,String>();
+		//Map<String,String> priceMap=new HashMap<String,String>();
 		String actPrice = priceList.get(0).getText().trim();
 		String exTax = priceList.get(1).getText().split(":")[0].trim();
 		String exTaxValue = priceList.get(1).getText().split(":")[1].trim();
-		priceMap.put("price", actPrice);
-		priceMap.put(exTax, exTaxValue);
-		return priceMap;
+		productMap.put("price", actPrice);
+		productMap.put(exTax, exTaxValue);
+		//return priceMap;
+	}
+	
+	public Map<String, String> getProductData() {
+		productMap = new HashMap<String, String>();
+		productMap.put("productHeader", getProductHeaderText());
+		productMap.put("productImages", String.valueOf(getProductImagesCount()));
+		getProductMetaData();
+		getProductPriceData();
+		
+		return productMap;
 	}
 }

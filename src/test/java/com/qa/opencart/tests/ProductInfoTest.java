@@ -1,5 +1,7 @@
 package com.qa.opencart.tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -54,4 +56,11 @@ public class ProductInfoTest extends BaseTest{
 		Assert.assertEquals(actProductImagesCount, expProductImagesCount);
 	}
 
+	@Test
+	public void productInfoTest() {
+		searchResPage = accPage.doSearch("macbook");
+		productInfoPage = searchResPage.selectProduct("MacBook Pro");
+		Map<String, String> productActualData = productInfoPage.getProductData();
+		System.out.println(productActualData);
+	}
 }
