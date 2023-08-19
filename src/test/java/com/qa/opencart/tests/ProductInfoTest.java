@@ -62,5 +62,11 @@ public class ProductInfoTest extends BaseTest{
 		productInfoPage = searchResPage.selectProduct("MacBook Pro");
 		Map<String, String> productActualData = productInfoPage.getProductData();
 		System.out.println(productActualData);
+		Assert.assertEquals(productActualData.get("Brand"), "Apple");
+		Assert.assertEquals(productActualData.get("Availability"), "In Stock");
+		Assert.assertEquals(productActualData.get("productHeader"), "MacBook Pro");
+		Assert.assertEquals(productActualData.get("price"), "$2,000.00");
+		Assert.assertEquals(productActualData.get("Reward Points"), "800");
+		
 	}
 }
