@@ -12,10 +12,11 @@ public class LoginPage {
 		private ElementUtil eleUtil;
 	
 	//1. By locators - page locators
-	private By emailID 		= By.id("input-email");
-	private By password 	= By.id("input-password");
+	private By emailID 			= By.id("input-email");
+	private By password 		= By.id("input-password");
 	private By forgotpwdLink	= By.linkText("Forgotten Password"); 
-	private By loginBtn		= By.xpath("//input[@type='submit']");
+	private By loginBtn			= By.xpath("//input[@type='submit']");
+	private By registerLink		= By.linkText("Register");
 	
 	
 	//2. Page Constructor 
@@ -47,6 +48,12 @@ public class LoginPage {
 		eleUtil.doClick(loginBtn);
 		//return eleUtil.waitForTitleIs(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SHORT_TIME_OUT);
 		return new AccountsPage(driver);
+	}
+	
+	public RegisterPage navigateToRegisterPage() {
+		eleUtil.waitForElementVisible(registerLink, AppConstants.SHORT_TIME_OUT);
+		return new RegisterPage(driver);
+		
 	}
 
 }
