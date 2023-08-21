@@ -1,13 +1,22 @@
 package com.qa.opencart.tests;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import com.qa.opencart.base.BaseTest;
-import com.qa.opencart.pages.RegisterPage;
+
 
 public class RegisterPageTest extends BaseTest{
 	
-	@Test(priority=1)
-	public void subscribeYesTest() {
-		registerPage.clickYes();
+	@BeforeClass
+	public void registerPageSetUp() {
+		registerPage=loginpage.navigateToRegisterPage();
 	}
+	
+	@Test
+	public void userRegisterTest() {
+		Assert.assertTrue(registerPage.registerUser("Naveen", "Testing", "naveen@test.com", "9191919191", "naveen@123", "yes"));
+	}
+	
 }

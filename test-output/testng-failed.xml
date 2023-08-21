@@ -6,7 +6,8 @@
       <class name="com.qa.opencart.tests.RegisterPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="subscribeYesTest"/>
+          <include name="registerPageSetUp"/>
+          <include name="userRegisterTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.RegisterPageTest -->

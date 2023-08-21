@@ -51,7 +51,7 @@ public class LoginPage {
 	}
 	
 	public RegisterPage navigateToRegisterPage() {
-		eleUtil.waitForElementVisible(registerLink, AppConstants.SHORT_TIME_OUT);
+		eleUtil.waitForElementVisible(registerLink, AppConstants.SHORT_TIME_OUT).click();
 		return new RegisterPage(driver);
 		
 	}
