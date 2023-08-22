@@ -2,6 +2,7 @@ package com.qa.opencart.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
@@ -14,9 +15,22 @@ public class RegisterPageTest extends BaseTest{
 		registerPage=loginpage.navigateToRegisterPage();
 	}
 	
-	@Test
-	public void userRegisterTest() {
-		Assert.assertTrue(registerPage.registerUser("Naveen", "Testing", "naveen@test.com", "9191919191", "naveen@123", "yes"));
+	public String getRandomEmailID() {
+		return "openauto"+System.currentTimeMillis()+"@open.com";
+	}
+	
+	@DataProvider
+	public Object[][] getUserRegData() {
+		return new Object[][] {
+			{"Swecha","Antara","9090909024","swecha@123","yes"},
+			{"Subbu","Venkata","9090909012","subbu@123","no"},
+			{"suneetha","Veeram","9090909023","sunee@123","yes"}
+		};
+	}
+	
+	@Test(dataProvider="getUserRegData")
+	public void userRegisterTest(String firstName,String lastName,String Telephone, String password, String subscribe) {
+		Assert.assertTrue(registerPage.registerUser(firstName, lastName, getRandomEmailID(), Telephone, password, subscribe));
 	}
 	
 }

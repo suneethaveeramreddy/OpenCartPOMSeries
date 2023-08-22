@@ -21,7 +21,11 @@ public class RegisterPage {
 	private By subscribeNo		= 	By.xpath("//label[normalize-space()='No']");
 	private By agreeCheckBox	=   By.xpath("//input[@type='checkbox']");	
 	private By continueBtn		=  	By.xpath("//input[@type='submit']");
+	
 	private By successMessg		= 	By.cssSelector("div#content h1");
+	private By logOut			= 	By.linkText("Logout");
+	private By registerLink		=	By.linkText("Register");
+	
 	
 	
 	public RegisterPage(WebDriver driver) {
@@ -47,6 +51,8 @@ public class RegisterPage {
 		String successMessg = eleUtil.waitForElementVisible(this.successMessg, AppConstants.LONG_TIME_OUT).getText();
 		System.out.println(successMessg);
 		if(successMessg.contains(AppConstants.USER_REGISTER_SUCCESS_MESSG)) {
+			eleUtil.doClick(logOut);
+			eleUtil.doClick(registerLink);
 			return true;
 		}
 		return false;
