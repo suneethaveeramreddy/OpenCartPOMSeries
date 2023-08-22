@@ -23,8 +23,8 @@ public class AppConstants {
 	public static final int MEDIUM_TIME_OUT = 10;
 	public static final int LONG_TIME_OUT = 15;
 	
+	//******************Sheet Names************************************//
 	
+	public static final String REGISTER_SHEET_NAME = "register";
 	
-	
-
 }

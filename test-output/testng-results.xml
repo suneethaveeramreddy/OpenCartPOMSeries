@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-22T11:09:04 JST" name="Default suite" finished-at="2023-08-22T11:09:34 JST" duration-ms="29992">
+  <suite started-at="2023-08-22T22:12:00 JST" name="Default suite" finished-at="2023-08-22T22:12:37 JST" duration-ms="36363">
     <groups>
     </groups>
-    <test started-at="2023-08-22T11:09:04 JST" name="Default test" finished-at="2023-08-22T11:09:34 JST" duration-ms="29992">
+    <test started-at="2023-08-22T22:12:00 JST" name="Default test" finished-at="2023-08-22T22:12:37 JST" duration-ms="36363">
       <class name="com.qa.opencart.tests.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:04 JST" name="setUp" finished-at="2023-08-22T11:09:07 JST" duration-ms="3247" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:00 JST" name="setUp" finished-at="2023-08-22T22:12:05 JST" duration-ms="4386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="registerPageSetUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:07 JST" name="registerPageSetUp" finished-at="2023-08-22T11:09:07 JST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="registerPageSetUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:05 JST" name="registerPageSetUp" finished-at="2023-08-22T22:12:05 JST" duration-ms="557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerPageSetUp -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:07 JST" name="userRegisterTest" data-provider="getUserRegData" finished-at="2023-08-22T11:09:16 JST" duration-ms="8488" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:06 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-08-22T22:12:16 JST" duration-ms="10342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[9090909024]]>
+                <![CDATA[9.090909024E9]]>
               </value>
             </param>
             <param index="3">
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:16 JST" name="userRegisterTest" data-provider="getUserRegData" finished-at="2023-08-22T11:09:24 JST" duration-ms="8664" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:16 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-08-22T22:12:26 JST" duration-ms="9698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[9090909012]]>
+                <![CDATA[9.090909012E9]]>
               </value>
             </param>
             <param index="3">
@@ -77,11 +77,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:24 JST" name="userRegisterTest" data-provider="getUserRegData" finished-at="2023-08-22T11:09:33 JST" duration-ms="9055" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:26 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-08-22T22:12:37 JST" duration-ms="10651" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[suneetha]]>
+                <![CDATA[Suneetha]]>
               </value>
             </param>
             <param index="1">
@@ -91,7 +91,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[9090909023]]>
+                <![CDATA[9.090909027E9]]>
               </value>
             </param>
             <param index="3">
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4ec4f3a0]" started-at="2023-08-22T11:09:33 JST" name="tearDown" finished-at="2023-08-22T11:09:34 JST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@409bf450]" started-at="2023-08-22T22:12:37 JST" name="tearDown" finished-at="2023-08-22T22:12:37 JST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
