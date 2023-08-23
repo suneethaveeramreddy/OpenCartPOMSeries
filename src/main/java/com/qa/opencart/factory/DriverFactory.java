@@ -20,6 +20,7 @@ public class DriverFactory {
 	Properties prop;
 	OptionsManager optionsManager;
 	public static String highlight;
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	
 		/**
 		 * This is used to initialize the driver
@@ -34,27 +35,35 @@ public class DriverFactory {
 		
 		switch (browserName.toLowerCase()) {
 		case "chrome":
-			driver =new ChromeDriver(optionsManager.getChromeOptions());
+			//driver =new ChromeDriver(optionsManager.getChromeOptions());
+			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			break;
 		case "firefox":
-			driver =new FirefoxDriver(optionsManager.getFirefoxOptions());
+			//driver =new FirefoxDriver(optionsManager.getFirefoxOptions());
+			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			break;
 		case "edge":
-			driver =new EdgeDriver(optionsManager.getEdgeOptions());
+			//driver =new EdgeDriver(optionsManager.getEdgeOptions());
+			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 			break;
 		case "safari":
-			driver =new SafariDriver();
+			//driver =new SafariDriver();
+			tlDriver.set(new SafariDriver());
 			break;
 		default:
 			System.out.println("please pass the right browser........." +browserName);
 			break;
 		}
 		
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.get(prop.getProperty("url"));
-		return driver;
+		getDriver().manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(prop.getProperty("url"));
+		return getDriver();
 		
+	}
+	
+	public static WebDriver getDriver() {
+		return tlDriver.get();
 	}
 	/**
 	 * This method is used to initialise the properties 
