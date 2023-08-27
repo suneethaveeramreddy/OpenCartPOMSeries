@@ -3,6 +3,18 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest">
+        <methods>
+          <include name="accPageTitleTest"/>
+          <include name="getLoginPageSetUp"/>
+          <include name="setUp"/>
+          <include name="accPageHeadersTest"/>
+          <include name="logoutLinkExistTest"/>
+          <include name="searchTest"/>
+          <include name="accPageHeadersCountTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
           <include name="loginPageTitleTest"/>
@@ -13,6 +25,24 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+      <class name="com.qa.opencart.tests.ProductInfoTest">
+        <methods>
+          <include name="productImagesCountTest"/>
+          <include name="setUp"/>
+          <include name="prodInfoSetUp"/>
+          <include name="productInfoTest"/>
+          <include name="productHeaderTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.ProductInfoTest -->
+      <class name="com.qa.opencart.tests.RegisterPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registerPageSetUp"/>
+          <include name="userRegisterTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.RegisterPageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

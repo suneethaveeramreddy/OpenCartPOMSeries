@@ -1,20 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 5.39 s <<< FAILURE! - in TestSuite
-loginPageTitleTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0.009 s  <<< FAILURE!
+Tests run: 31, Failures: 7, Errors: 0, Skipped: 24, Time elapsed: 5.82 s <<< FAILURE! - in TestSuite
+getLoginPageSetUp(com.qa.opencart.tests.AccountsPageTest)  Time elapsed: 4.46 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at com.qa.opencart.tests.AccountsPageTest.getLoginPageSetUp(AccountsPageTest.java:18)
+
+loginPageTitleTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "com.qa.opencart.pages.LoginPage.getLoginPageTitle()" because "this.loginpage" is null
-	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:12)
+	at com.qa.opencart.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:13)
 
 getLoginPageURLTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "com.qa.opencart.pages.LoginPage.getLoginPageURL()" because "this.loginpage" is null
-	at com.qa.opencart.tests.LoginPageTest.getLoginPageURLTest(LoginPageTest.java:18)
+	at com.qa.opencart.tests.LoginPageTest.getLoginPageURLTest(LoginPageTest.java:19)
 
 isForgotPwdLinkExistTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist()" because "this.loginpage" is null
-	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:24)
+	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:25)
 
-loginTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "com.qa.opencart.pages.LoginPage.doLogin(String, String)" because "this.loginpage" is null
-	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:29)
+loginTest(com.qa.opencart.tests.LoginPageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:30)
+
+prodInfoSetUp(com.qa.opencart.tests.ProductInfoTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at com.qa.opencart.tests.ProductInfoTest.prodInfoSetUp(ProductInfoTest.java:17)
+
+registerPageSetUp(com.qa.opencart.tests.RegisterPageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.opencart.pages.LoginPage.navigateToRegisterPage()" because "this.loginpage" is null
+	at com.qa.opencart.tests.RegisterPageTest.registerPageSetUp(RegisterPageTest.java:17)
 

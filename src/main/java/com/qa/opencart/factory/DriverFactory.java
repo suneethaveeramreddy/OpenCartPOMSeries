@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -70,12 +71,45 @@ public class DriverFactory {
 	 * @return
 	 */
 	public Properties initProp() {
+
+		//mvn clean install -Denv="qa"
+		FileInputStream ip=null;
 		prop = new Properties();
+		
+		String envName = System.getProperty("env");
+		System.out.println("env name is: " +envName);
 		try {
-			FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
+		if(envName==null) {
+			System.out.println("no env is given...hence running it on QA env..by default...");
+			ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
+		}
+		else {
+			switch (envName.toLowerCase().trim()) {
+			case "qa":
+				ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
+				break;
+			case "dev":
+				ip = new FileInputStream("./src/test/resources/config/dev.config.properties");
+				break;
+			case "stage":
+				ip = new FileInputStream("./src/test/resources/config/stage.config.properties");
+				break;
+			case "uat":
+				ip = new FileInputStream("./src/test/resources/config/uat.config.properties");
+				break;
+			case "prod":
+				ip = new FileInputStream("./src/test/resources/config/config.properties");
+				break;
+			default:
+				System.out.println("please pass the right env name...."+ envName);
+				break;
+			}
+		}
+		}catch(FileNotFoundException e) {
 			e.printStackTrace();
+		}
+		try {
+			prop.load(ip);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
