@@ -94,7 +94,7 @@ public class ExtentReportListener implements ITestListener {
 		String methodName = result.getMethod().getMethodName();
 		System.out.println((methodName + " passed!"));
 		test.get().pass("Test passed");
-		//test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(methodName), methodName).build());
+		test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(methodName), methodName).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
@@ -102,14 +102,14 @@ public class ExtentReportListener implements ITestListener {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
 		String methodName = result.getMethod().getMethodName();
 
-		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(), methodName).build());
+		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(methodName), methodName).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		String methodName = result.getMethod().getMethodName();
-		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(), methodName).build());
+		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(methodName), methodName ).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 

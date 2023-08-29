@@ -122,9 +122,9 @@ public class DriverFactory {
 	 * take Screenshot
 	 * @return 
 	 */
-	public static String getScreenshot() {
+	public static String getScreenshot(String methodName) {
 		File srcFile = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"/screenshot/"+System.currentTimeMillis()+".png";
+		String path = System.getProperty("user.dir")+"/screenshot/"+methodName+"_"+System.currentTimeMillis()+".png";
 		File destination = new File(path);
 		try {
 			FileHandler.copy(srcFile, destination);
