@@ -9,7 +9,11 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Story;
 
+@Epic("EPIC - 102: Design of the ProductInfo page for open cart app")
+@Story("User Story - 202: implement ProductInfo page features for open cart app")
 public class ProductInfoTest extends BaseTest{
 
 	@BeforeClass

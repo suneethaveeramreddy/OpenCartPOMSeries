@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="27" failed="1" skipped="0">
+<testng-results retried="3" ignored="0" total="31" passed="27" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-01T12:43:51 JST" name="Opencart App Test Regression Suite" finished-at="2023-09-01T12:44:35 JST" duration-ms="43216">
+  <suite started-at="2023-09-02T07:46:54 JST" name="Opencart App Test Regression Suite" finished-at="2023-09-02T07:47:47 JST" duration-ms="52668">
     <groups>
     </groups>
-    <test started-at="2023-09-01T12:43:51 JST" name="Accounts Page Test" finished-at="2023-09-01T12:44:07 JST" duration-ms="15803">
+    <test started-at="2023-09-02T07:46:54 JST" name="Accounts Page Test" finished-at="2023-09-02T07:47:10 JST" duration-ms="16116">
       <class name="com.qa.opencart.tests.AccountsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:43:52 JST" name="setUp" finished-at="2023-09-01T12:43:58 JST" duration-ms="6647" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:46:54 JST" name="setUp" finished-at="2023-09-02T07:46:59 JST" duration-ms="5409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="getLoginPageSetUp()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:43:58 JST" name="getLoginPageSetUp" finished-at="2023-09-01T12:44:00 JST" duration-ms="2326" status="PASS">
+        <test-method is-config="true" signature="getLoginPageSetUp()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:46:59 JST" name="getLoginPageSetUp" finished-at="2023-09-02T07:47:02 JST" duration-ms="2482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLoginPageSetUp -->
-        <test-method signature="accPageHeadersCountTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:00 JST" name="accPageHeadersCountTest" finished-at="2023-09-01T12:44:01 JST" duration-ms="151" status="PASS">
+        <test-method signature="accPageHeadersCountTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:02 JST" name="accPageHeadersCountTest" finished-at="2023-09-02T07:47:02 JST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageHeadersCountTest -->
-        <test-method signature="accPageHeadersTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:01 JST" name="accPageHeadersTest" finished-at="2023-09-01T12:44:01 JST" duration-ms="110" status="PASS">
+        <test-method signature="accPageHeadersTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:02 JST" name="accPageHeadersTest" finished-at="2023-09-02T07:47:02 JST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageHeadersTest -->
-        <test-method signature="accPageTitleTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:01 JST" name="accPageTitleTest" finished-at="2023-09-01T12:44:01 JST" duration-ms="12" status="PASS">
+        <test-method signature="accPageTitleTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:03 JST" name="accPageTitleTest" finished-at="2023-09-02T07:47:03 JST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accPageTitleTest -->
-        <test-method signature="logoutLinkExistTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:01 JST" name="logoutLinkExistTest" finished-at="2023-09-01T12:44:01 JST" duration-ms="42" status="PASS">
+        <test-method signature="logoutLinkExistTest()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:03 JST" name="logoutLinkExistTest" finished-at="2023-09-02T07:47:03 JST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutLinkExistTest -->
-        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:01 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-01T12:44:03 JST" duration-ms="1250" status="PASS">
+        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:03 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-02T07:47:05 JST" duration-ms="1433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:03 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-01T12:44:04 JST" duration-ms="1164" status="PASS">
+        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:05 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-02T07:47:06 JST" duration-ms="1378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:04 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-01T12:44:05 JST" duration-ms="1186" status="PASS">
+        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:07 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-02T07:47:08 JST" duration-ms="1519" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:06 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-01T12:44:07 JST" duration-ms="1215" status="PASS">
+        <test-method signature="searchTest(java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:08 JST" name="searchTest" data-provider="getSearchKey" finished-at="2023-09-02T07:47:10 JST" duration-ms="1368" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,95 +95,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@1192b58e]" started-at="2023-09-01T12:44:07 JST" name="tearDown" finished-at="2023-09-01T12:44:07 JST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.AccountsPageTest@2525a5b8]" started-at="2023-09-02T07:47:10 JST" name="tearDown" finished-at="2023-09-02T07:47:10 JST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
     </test> <!-- Accounts Page Test -->
-    <test started-at="2023-09-01T12:43:51 JST" name="Login Page Test" finished-at="2023-09-01T12:44:12 JST" duration-ms="20472">
-      <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:43:52 JST" name="setUp" finished-at="2023-09-01T12:43:58 JST" duration-ms="6651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:43:58 JST" name="loginPageTitleTest" finished-at="2023-09-01T12:43:58 JST" duration-ms="150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="getLoginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:43:59 JST" name="getLoginPageURLTest" finished-at="2023-09-01T12:43:59 JST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLoginPageURLTest -->
-        <test-method signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:43:59 JST" name="isForgotPwdLinkExistTest" finished-at="2023-09-01T12:44:09 JST" duration-ms="10254" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58094/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e4e8fbff5f11db43fec5acce69abaf1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58094/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e4e8fbff5f11db43fec5acce69abaf1
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:217)
-at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:41)
-at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isForgotPwdLinkExistTest -->
-        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:44:09 JST" name="loginTest" finished-at="2023-09-01T12:44:12 JST" duration-ms="2118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4db60246]" started-at="2023-09-01T12:44:12 JST" name="tearDown" finished-at="2023-09-01T12:44:12 JST" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
-    </test> <!-- Login Page Test -->
-    <test started-at="2023-09-01T12:43:51 JST" name="Register Page Test" finished-at="2023-09-01T12:44:28 JST" duration-ms="36401">
+    <test started-at="2023-09-02T07:46:54 JST" name="Register Page Test" finished-at="2023-09-02T07:47:32 JST" duration-ms="38272">
       <class name="com.qa.opencart.tests.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:43:52 JST" name="setUp" finished-at="2023-09-01T12:43:58 JST" duration-ms="6757" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:46:54 JST" name="setUp" finished-at="2023-09-02T07:46:59 JST" duration-ms="5410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="registerPageSetUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:43:58 JST" name="registerPageSetUp" finished-at="2023-09-01T12:43:59 JST" duration-ms="601" status="PASS">
+        <test-method is-config="true" signature="registerPageSetUp()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:46:59 JST" name="registerPageSetUp" finished-at="2023-09-02T07:47:00 JST" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerPageSetUp -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:44:00 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-01T12:44:09 JST" duration-ms="9083" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:47:01 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-02T07:47:11 JST" duration-ms="10255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +142,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:44:09 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-01T12:44:18 JST" duration-ms="8962" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:47:12 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-02T07:47:22 JST" duration-ms="10018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +173,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:44:19 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-01T12:44:27 JST" duration-ms="8831" status="PASS">
+        <test-method signature="userRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:47:22 JST" name="userRegisterTest" data-provider="getUserRegSheetData" finished-at="2023-09-02T07:47:32 JST" duration-ms="9817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -276,23 +204,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@4232b34a]" started-at="2023-09-01T12:44:28 JST" name="tearDown" finished-at="2023-09-01T12:44:28 JST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.RegisterPageTest@6a1d6ef2]" started-at="2023-09-02T07:47:32 JST" name="tearDown" finished-at="2023-09-02T07:47:32 JST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.tests.RegisterPageTest -->
     </test> <!-- Register Page Test -->
-    <test started-at="2023-09-01T12:43:51 JST" name="ProductInfo Page Test" finished-at="2023-09-01T12:44:35 JST" duration-ms="43216">
+    <test started-at="2023-09-02T07:46:54 JST" name="ProductInfo Page Test" finished-at="2023-09-02T07:47:39 JST" duration-ms="45011">
       <class name="com.qa.opencart.tests.ProductInfoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:43:52 JST" name="setUp" finished-at="2023-09-01T12:43:58 JST" duration-ms="6486" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:46:54 JST" name="setUp" finished-at="2023-09-02T07:46:59 JST" duration-ms="5410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prodInfoSetUp()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:43:58 JST" name="prodInfoSetUp" finished-at="2023-09-01T12:44:01 JST" duration-ms="2486" status="PASS">
+        <test-method is-config="true" signature="prodInfoSetUp()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:46:59 JST" name="prodInfoSetUp" finished-at="2023-09-02T07:47:02 JST" duration-ms="2339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prodInfoSetUp -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:01 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:03 JST" duration-ms="2726" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:02 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:05 JST" duration-ms="2791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,7 +236,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:04 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:06 JST" duration-ms="2122" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:05 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:08 JST" duration-ms="2998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -324,7 +252,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:06 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:08 JST" duration-ms="2350" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:08 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:11 JST" duration-ms="2604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -340,7 +268,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:08 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:11 JST" duration-ms="2416" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:11 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:14 JST" duration-ms="2927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -356,7 +284,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:11 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:13 JST" duration-ms="2098" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:14 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:17 JST" duration-ms="2384" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -372,7 +300,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:13 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-01T12:44:16 JST" duration-ms="2486" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:17 JST" name="productHeaderTest" data-provider="productTestData" finished-at="2023-09-02T07:47:19 JST" duration-ms="2450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,7 +316,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:16 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:18 JST" duration-ms="2233" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:20 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:22 JST" duration-ms="2440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -409,7 +337,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:18 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:21 JST" duration-ms="2490" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:22 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:25 JST" duration-ms="2407" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,7 +358,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:21 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:23 JST" duration-ms="2215" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:25 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:27 JST" duration-ms="2472" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -451,7 +379,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:23 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:26 JST" duration-ms="2346" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:27 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:30 JST" duration-ms="2481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -472,7 +400,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:26 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:28 JST" duration-ms="2114" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:30 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:32 JST" duration-ms="2447" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -493,7 +421,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:28 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-01T12:44:31 JST" duration-ms="2320" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String,java.lang.String,int)[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:33 JST" name="productImagesCountTest" data-provider="productData" finished-at="2023-09-02T07:47:35 JST" duration-ms="2309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -514,15 +442,231 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productInfoTest()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:31 JST" name="productInfoTest" finished-at="2023-09-01T12:44:34 JST" duration-ms="3661" status="PASS">
+        <test-method signature="productInfoTest()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:35 JST" name="productInfoTest" finished-at="2023-09-02T07:47:39 JST" duration-ms="3463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productInfoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@6e3eb0cd]" started-at="2023-09-01T12:44:34 JST" name="tearDown" finished-at="2023-09-01T12:44:35 JST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.ProductInfoTest@76130a29]" started-at="2023-09-02T07:47:39 JST" name="tearDown" finished-at="2023-09-02T07:47:39 JST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.tests.ProductInfoTest -->
     </test> <!-- ProductInfo Page Test -->
+    <test started-at="2023-09-02T07:46:54 JST" name="Login Page Test" finished-at="2023-09-02T07:47:47 JST" duration-ms="52668">
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:46:54 JST" name="setUp" finished-at="2023-09-02T07:46:59 JST" duration-ms="5409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:46:59 JST" name="loginPageTitleTest" finished-at="2023-09-02T07:47:00 JST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="getLoginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:00 JST" name="getLoginPageURLTest" finished-at="2023-09-02T07:47:00 JST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginPageURLTest -->
+        <test-method retried="true" signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:00 JST" name="isForgotPwdLinkExistTest" finished-at="2023-09-02T07:47:11 JST" duration-ms="10470" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
+at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
+at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isForgotPwdLinkExistTest -->
+        <test-method retried="true" signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:12 JST" name="isForgotPwdLinkExistTest" finished-at="2023-09-02T07:47:22 JST" duration-ms="10686" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
+at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
+at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isForgotPwdLinkExistTest -->
+        <test-method retried="true" signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:22 JST" name="isForgotPwdLinkExistTest" finished-at="2023-09-02T07:47:33 JST" duration-ms="10484" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
+at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
+at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isForgotPwdLinkExistTest -->
+        <test-method signature="isForgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:33 JST" name="isForgotPwdLinkExistTest" finished-at="2023-09-02T07:47:44 JST" duration-ms="10425" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c507fae9f5049b78c6291ae56d24ac5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
+at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
+at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isForgotPwdLinkExistTest -->
+        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:44 JST" name="loginTest" finished-at="2023-09-02T07:47:46 JST" duration-ms="2232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@7fb53256]" started-at="2023-09-02T07:47:46 JST" name="tearDown" finished-at="2023-09-02T07:47:47 JST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </test> <!-- Login Page Test -->
   </suite> <!-- Opencart App Test Regression Suite -->
 </testng-results>

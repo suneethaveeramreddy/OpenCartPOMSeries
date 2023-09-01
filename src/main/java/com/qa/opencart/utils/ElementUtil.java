@@ -20,6 +20,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.opencart.factory.DriverFactory;
 
+import io.qameta.allure.Step;
+
 public class ElementUtil {
 
 	private WebDriver driver;
@@ -30,6 +32,7 @@ public class ElementUtil {
 		jsUtil = new JavaScriptUtil(driver);
 	}
 	
+	@Step("entering value: {0} in locator: {0}")
 	public void doSendKeys(By locator,String value) {
 		if(value==null) {
 			System.out.println("value can not be null while using sendKeys method");
@@ -47,7 +50,8 @@ public class ElementUtil {
 		System.out.println("Element text is =====>" +eleText);
 		return eleText;
 	}
-
+	
+	@Step("getting element for locator {0}")
 	public WebElement getElement(By locator) {
 		
 		WebElement element = driver.findElement(locator);
@@ -212,6 +216,7 @@ public class ElementUtil {
 	 * @param timeOut
 	 * @return
 	 */
+	@Step("....waiting for element is visible for locator: {0} with timeout: {1}")
 	public WebElement waitForElementVisible(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -250,6 +255,7 @@ public class ElementUtil {
 	 * @param timeOut
 	 * @return
 	 */
+	@Step("...waiting for page url and fetching it....url fraction : {0} and timeOut {1}")
 	public String waitForURLContains(String urlFraction, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
@@ -320,6 +326,7 @@ public class ElementUtil {
 	 * @param timeOut
 	 * @return
 	 */
+	@Step("waiting for the title and capture the title.....")
 	public String waitForTitleIs(String titleValue, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
