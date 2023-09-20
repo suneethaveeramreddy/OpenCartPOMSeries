@@ -9,171 +9,44 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Opencart App Test Regression Suite</th></tr>
-<tr><td><a href="#t0">Accounts Page Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,116</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Register Page Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">38,272</td><td></td><td></td></tr>
-<tr><td><a href="#t2">ProductInfo Page Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,011</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">Login Page Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">52,668</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">27</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">1</th><th class="num">152,067</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Login Page Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,492</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Accounts Page Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,577</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Register Page Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,017</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">ProductInfo Page Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">49,564</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">28</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">122,650</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Opencart App Test Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Accounts Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.qa.opencart.tests.AccountsPageTest</td><td><a href="#m0">accPageHeadersCountTest</a></td><td rowspan="1">1693608422400</td><td rowspan="1">113</td></tr><tr class="passedeven"><td><a href="#m1">accPageHeadersTest</a></td><td rowspan="1">1693608422814</td><td rowspan="1">127</td></tr><tr class="passedeven"><td><a href="#m2">accPageTitleTest</a></td><td rowspan="1">1693608423210</td><td rowspan="1">26</td></tr><tr class="passedeven"><td><a href="#m3">logoutLinkExistTest</a></td><td rowspan="1">1693608423461</td><td rowspan="1">40</td></tr><tr class="passedeven"><td><a href="#m4">searchTest</a></td><td rowspan="4">1693608428778</td><td rowspan="4">1368</td></tr><tr class="passedeven"><td><a href="#m5">searchTest</a></td></tr><tr class="passedeven"><td><a href="#m6">searchTest</a></td></tr><tr class="passedeven"><td><a href="#m7">searchTest</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Register Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.opencart.tests.RegisterPageTest</td><td><a href="#m8">userRegisterTest</a></td><td rowspan="3">1693608432230</td><td rowspan="3">10018</td></tr><tr class="passedeven"><td><a href="#m9">userRegisterTest</a></td></tr><tr class="passedeven"><td><a href="#m10">userRegisterTest</a></td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">ProductInfo Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.qa.opencart.tests.ProductInfoTest</td><td><a href="#m11">productHeaderTest</a></td><td rowspan="6">1693608425262</td><td rowspan="6">2998</td></tr><tr class="passedeven"><td><a href="#m12">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m13">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m14">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m15">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m16">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m17">productImagesCountTest</a></td><td rowspan="6">1693608440041</td><td rowspan="6">2440</td></tr><tr class="passedeven"><td><a href="#m18">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m19">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m20">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m21">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m22">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m23">productInfoTest</a></td><td rowspan="1">1693608455597</td><td rowspan="1">3463</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">Login Page Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m24">isForgotPwdLinkExistTest</a></td><td rowspan="1">1693608453738</td><td rowspan="1">10425</td></tr><tr><th colspan="4">Login Page Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m25">isForgotPwdLinkExistTest</a></td><td rowspan="3">1693608432022</td><td rowspan="3">10686</td></tr><tr class="retriedeven"><td><a href="#m26">isForgotPwdLinkExistTest</a></td></tr><tr class="retriedeven"><td><a href="#m27">isForgotPwdLinkExistTest</a></td></tr><tr><th colspan="4">Login Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m28">getLoginPageURLTest</a></td><td rowspan="1">1693608420425</td><td rowspan="1">23</td></tr><tr class="passedeven"><td><a href="#m29">loginPageTitleTest</a></td><td rowspan="1">1693608419953</td><td rowspan="1">101</td></tr><tr class="passedeven"><td><a href="#m30">loginTest</a></td><td rowspan="1">1693608464491</td><td rowspan="1">2232</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Opencart App Test Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m0">getLoginPageURLTest</a></td><td rowspan="1">1695213245119</td><td rowspan="1">36</td></tr><tr class="passedeven"><td><a href="#m1">isForgotPwdLinkExistTest</a></td><td rowspan="1">1695213245159</td><td rowspan="1">119</td></tr><tr class="passedeven"><td><a href="#m2">loginPageTitleTest</a></td><td rowspan="1">1695213244828</td><td rowspan="1">133</td></tr><tr class="passedeven"><td><a href="#m3">loginTest</a></td><td rowspan="1">1695213245283</td><td rowspan="1">3061</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Accounts Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.qa.opencart.tests.AccountsPageTest</td><td><a href="#m4">accPageHeadersCountTest</a></td><td rowspan="1">1695213253441</td><td rowspan="1">133</td></tr><tr class="passedeven"><td><a href="#m5">accPageHeadersTest</a></td><td rowspan="1">1695213253575</td><td rowspan="1">173</td></tr><tr class="passedeven"><td><a href="#m6">accPageTitleTest</a></td><td rowspan="1">1695213253754</td><td rowspan="1">28</td></tr><tr class="passedeven"><td><a href="#m7">logoutLinkExistTest</a></td><td rowspan="1">1695213253786</td><td rowspan="1">53</td></tr><tr class="passedeven"><td><a href="#m8">searchTest</a></td><td rowspan="4">1695213255889</td><td rowspan="4">1711</td></tr><tr class="passedeven"><td><a href="#m9">searchTest</a></td></tr><tr class="passedeven"><td><a href="#m10">searchTest</a></td></tr><tr class="passedeven"><td><a href="#m11">searchTest</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Register Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.opencart.tests.RegisterPageTest</td><td><a href="#m12">userRegisterTest</a></td><td rowspan="3">1695213247165</td><td rowspan="3">12964</td></tr><tr class="passedeven"><td><a href="#m13">userRegisterTest</a></td></tr><tr class="passedeven"><td><a href="#m14">userRegisterTest</a></td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">ProductInfo Page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.qa.opencart.tests.ProductInfoTest</td><td><a href="#m15">productHeaderTest</a></td><td rowspan="6">1695213264045</td><td rowspan="6">3336</td></tr><tr class="passedeven"><td><a href="#m16">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m17">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m18">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m19">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m20">productHeaderTest</a></td></tr><tr class="passedeven"><td><a href="#m21">productImagesCountTest</a></td><td rowspan="6">1695213280454</td><td rowspan="6">2947</td></tr><tr class="passedeven"><td><a href="#m22">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m23">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m24">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m25">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m26">productImagesCountTest</a></td></tr><tr class="passedeven"><td><a href="#m27">productInfoTest</a></td><td rowspan="1">1695213286505</td><td rowspan="1">4023</td></tr></tbody>
 </table>
-<h2>Accounts Page Test</h2><h3 id="m0">com.qa.opencart.tests.AccountsPageTest#accPageHeadersCountTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.opencart.tests.AccountsPageTest#accPageHeadersTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.opencart.tests.AccountsPageTest#accPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.opencart.tests.AccountsPageTest#logoutLinkExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>canon</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>imac</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Register Page Test</h2><h3 id="m8">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Subbu</td><td>Venkata</td><td>9090909012</td><td>subbu@123</td><td>no</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Suneetha</td><td>Veeram</td><td>9090909027</td><td>sunee@123</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Swecha</td><td>Antara</td><td>9090909024</td><td>swecha@123</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ProductInfo Page Test</h2><h3 id="m11">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Air</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung SyncMaster 941BW</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>iMac</td><td>iMac</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Pro</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>canon</td><td>Canon EOS 5D</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung Galaxy Tab 10.1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Pro</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Air</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung SyncMaster 941BW</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung Galaxy Tab 10.1</td><td>7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>iMac</td><td>iMac</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>canon</td><td>Canon EOS 5D</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m23">com.qa.opencart.tests.ProductInfoTest#productInfoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Login Page Test</h2><h3 id="m24">com.qa.opencart.tests.LoginPageTest#isForgotPwdLinkExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c507fae9f5049b78c6291ae56d24ac5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
-	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
-	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m25">com.qa.opencart.tests.LoginPageTest#isForgotPwdLinkExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c507fae9f5049b78c6291ae56d24ac5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
-	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
-	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m26">com.qa.opencart.tests.LoginPageTest#isForgotPwdLinkExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c507fae9f5049b78c6291ae56d24ac5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
-	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
-	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m27">com.qa.opencart.tests.LoginPageTest#isForgotPwdLinkExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sunee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51519/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c507fae9f5049b78c6291ae56d24ac5
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:222)
-	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:47)
-	at com.qa.opencart.tests.LoginPageTest.isForgotPwdLinkExistTest(LoginPageTest.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m28">com.qa.opencart.tests.LoginPageTest#getLoginPageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m29">com.qa.opencart.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m30">com.qa.opencart.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Page Test</h2><h3 id="m0">com.qa.opencart.tests.LoginPageTest#getLoginPageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.opencart.tests.LoginPageTest#isForgotPwdLinkExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.opencart.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.opencart.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Accounts Page Test</h2><h3 id="m4">com.qa.opencart.tests.AccountsPageTest#accPageHeadersCountTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.opencart.tests.AccountsPageTest#accPageHeadersTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.opencart.tests.AccountsPageTest#accPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.opencart.tests.AccountsPageTest#logoutLinkExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>imac</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>canon</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.opencart.tests.AccountsPageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Register Page Test</h2><h3 id="m12">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Swecha</td><td>Antara</td><td>9090909024</td><td>swecha@123</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Subbu</td><td>Venkata</td><td>9090909012</td><td>subbu@123</td><td>no</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.qa.opencart.tests.RegisterPageTest#userRegisterTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Suneetha</td><td>Veeram</td><td>9090909027</td><td>sunee@123</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ProductInfo Page Test</h2><h3 id="m15">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>canon</td><td>Canon EOS 5D</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Air</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung SyncMaster 941BW</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>iMac</td><td>iMac</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Pro</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.qa.opencart.tests.ProductInfoTest#productHeaderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung Galaxy Tab 10.1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung SyncMaster 941BW</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>iMac</td><td>iMac</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>canon</td><td>Canon EOS 5D</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>samsung</td><td>Samsung Galaxy Tab 10.1</td><td>7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Pro</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.qa.opencart.tests.ProductInfoTest#productImagesCountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>macbook</td><td>MacBook Air</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.qa.opencart.tests.ProductInfoTest#productInfoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
