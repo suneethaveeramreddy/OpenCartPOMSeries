@@ -29,6 +29,7 @@ public class OptionsManager {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 			co.setCapability("browserName", "chrome");
+			co.setBrowserVersion(prop.getProperty("browserversion").trim());
 			//co.setCapability("enableVNC", true);
 		}
 		return co;
@@ -45,6 +46,7 @@ public class OptionsManager {
 		}
 		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 			fo.setCapability("browserName", "firefox");
+			fo.setBrowserVersion(prop.getProperty("browserversion").trim());
 			//fo.setCapability("enableVNC", true);
 		}
 		return fo;
