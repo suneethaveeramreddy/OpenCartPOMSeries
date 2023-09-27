@@ -27,14 +27,15 @@ public class BaseTest {
 	
 	protected SoftAssert softAsset;
 	
-	@Parameters({"browser","browserversion"})
+	@Parameters({"browser","browserversion","testname"})
 	@BeforeTest()
-	public void setUp(String browserName, String browserVersion) {
+	public void setUp(String browserName, String browserVersion, String testName) {
 		df=new DriverFactory();
 		prop=df.initProp();
 		if(browserName!=null) {//it means passing the browser from testng.xml
 			prop.setProperty("browser", browserName);
 			prop.setProperty("browserversion", browserVersion);
+			prop.setProperty("testname", testName);
 		}
 		driver=df.initDriver(prop);
 		loginpage = new LoginPage(driver);
