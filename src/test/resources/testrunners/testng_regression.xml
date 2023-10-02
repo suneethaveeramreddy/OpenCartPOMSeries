@@ -41,7 +41,7 @@
 
 	<test name="Register Page Test">
 	<parameter name="browser" value="chrome"></parameter>
-	<parameter name="browserversion" value="115"></parameter>
+	<parameter name="browserversion" value="116"></parameter>
 	<parameter name="testname" value="RegisterPageTest"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.RegisterPageTest" />

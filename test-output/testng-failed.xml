@@ -6,15 +6,19 @@
     <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="4">
+  <test thread-count="4" parallel="tests" name="ProductInfo Page Test(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="testname" value="ProductInfoPageTest"/>
+    <parameter name="browserversion" value="79"/>
     <classes>
-      <class name="com.qa.opencart.tests.LoginPageTest">
+      <class name="com.qa.opencart.tests.ProductInfoTest">
         <methods>
           <include name="setUp"/>
-          <include name="isForgotPwdLinkExistTest"/>
+          <include name="prodInfoSetUp"/>
+          <include name="productHeaderTest" invocation-numbers="5"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+      </class> <!-- com.qa.opencart.tests.ProductInfoTest -->
     </classes>
-  </test> <!-- Login Page Test(failed) -->
+  </test> <!-- ProductInfo Page Test(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->
